@@ -1,2 +1,19 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="wrapper">
+  <ul class="header">
+    <li class="green-item">102</li>
+    <li>00</li>
+    <li>PERSText.</li>
+    <li><%= Time.now %></li>
+  </ul>
+  <div class="body">
+    <div class="title">
+      <p class="name">Moritz Wahrlich</p>
+      <p class="links email">
+        <%= mail_to "moritz.wahrlich@outlook.com", "mail" %>
+      </p>
+      <p class="links linkedin">
+        <%= link_to "linkedin", "https://www.linkedin.com/in/moritzwahrlich/", :class => "links", :target => "_blank" %>
+      </p>
+    </div>
+  </div>
+</div>
